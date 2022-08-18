@@ -1,0 +1,15 @@
+.NavbarContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7em;
+  font-size: 1.5rem;
+}
+.NavbarContainer #header {
+  font-size: 2rem;
+}
+
+.navItemWrap {
+  width: 30em;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=navbarStyles.css.map */

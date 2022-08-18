@@ -1,0 +1,17 @@
+.btn, .themeBtn .btnWrap button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.themeBtn {
+  display: flex;
+}
+.themeBtn .desc {
+  margin-right: 1em;
+  cursor: pointer;
+  line-height: 1.5;
+}
+.themeBtn .btnWrap button {
+  font-size: 1.2rem;
+}/*# sourceMappingURL=themeStyles.css.map */

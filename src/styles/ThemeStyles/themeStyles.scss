@@ -1,0 +1,23 @@
+.btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.themeBtn {
+  display: flex;
+  //   justify-content: flex-end;
+
+  .desc {
+    margin-right: 1em;
+    cursor: pointer;
+    line-height: 1.5;
+  }
+
+  .btnWrap {
+    button {
+      @extend .btn;
+      font-size: 1.2rem;
+    }
+  }
+}

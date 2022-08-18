@@ -1,0 +1,65 @@
+.favouriteContainer {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.favouriteWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 1em;
+  width: 90%;
+  margin: 1em auto;
+  transition: 0.5s;
+}
+
+#faveWrap {
+  border-radius: 10px;
+  position: relative;
+  background-color: aqua;
+  width: 100%;
+  max-width: 350px;
+  height: 400px;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#faveDetails {
+  background-color: rgba(15, 14, 14, 0.8);
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 10px 10px;
+  transition: 0.5s;
+}
+#faveDetails #faveMovie {
+  text-align: center;
+}
+#faveDetails button {
+  color: #fff;
+  padding: 1em;
+  font-size: 1.4rem;
+  border: 0;
+  background-color: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#faveDetails button span {
+  color: red;
+}
+
+#faveWrap:hover #faveDetails {
+  display: block;
+}/*# sourceMappingURL=favouriteMoviesStyles.css.map */
