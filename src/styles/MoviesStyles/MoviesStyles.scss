@@ -6,7 +6,7 @@
   position: relative;
   border-radius: 10px;
   transition: 0.5s;
-  margin: 2em 0;
+  margin: 2em auto;
 }
 
 img {
@@ -14,6 +14,27 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: "1125px") {
+  .movieWrap {
+    width: 330px;
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: "804px") {
+  .movieWrap {
+    width: 330px;
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: "500px") {
+  .movieWrap {
+    width: 330px;
+    height: 380px;
+  }
 }
 
 #details {
@@ -50,5 +71,24 @@ img {
   transform: scale(1.1);
   #details {
     display: block;
+  }
+}
+
+@media only screen and (max-width: "1125px") {
+  #details {
+    background-color: rgba(15, 14, 14, 0.8);
+    display: block;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+
+    button {
+      font-size: 1.4rem;
+      border: 0;
+      line-height: 1.5;
+    }
+  }
+
+  .movieWrap:hover {
+    transform: scale(1);
   }
 }

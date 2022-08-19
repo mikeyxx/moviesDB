@@ -16,7 +16,7 @@ const Movies = () => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1125,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -25,7 +25,7 @@ const Movies = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 804,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -33,7 +33,7 @@ const Movies = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
