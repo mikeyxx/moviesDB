@@ -1,10 +1,12 @@
 .movieWrap {
   background-color: aqua;
+  // width: 100;
   width: 350px;
   height: 400px;
   position: relative;
   border-radius: 10px;
   transition: 0.5s;
+  margin: 2em 0;
 }
 
 img {
@@ -45,6 +47,7 @@ img {
 }
 
 .movieWrap:hover {
+  transform: scale(1.1);
   #details {
     display: block;
   }

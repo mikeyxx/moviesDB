@@ -5,6 +5,7 @@
   position: relative;
   border-radius: 10px;
   transition: 0.5s;
+  margin: 2em 0;
 }
 
 img {
@@ -42,6 +43,9 @@ img {
   color: red;
 }
 
+.movieWrap:hover {
+  transform: scale(1.1);
+}
 .movieWrap:hover #details {
   display: block;
 }/*# sourceMappingURL=MoviesStyles.css.map */

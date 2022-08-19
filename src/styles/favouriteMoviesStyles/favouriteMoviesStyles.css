@@ -1,21 +1,40 @@
 .favouriteContainer {
-  width: 100%;
-  height: 100%;
   padding: 1em;
   display: flex;
   flex-direction: column;
+}
+.favouriteContainer h1 {
+  margin-bottom: 1em;
 }
 
 .favouriteWrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  gap: 1em;
+  gap: 1.5em;
   width: 90%;
   margin: 1em auto;
   transition: 0.5s;
 }
 
+@media only screen and (max-width: 1125px) {
+  .favouriteWrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+  }
+}
+@media only screen and (max-width: 804px) {
+  .favouriteWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .favouriteWrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+}
 #faveWrap {
   border-radius: 10px;
   position: relative;
@@ -23,6 +42,7 @@
   width: 100%;
   max-width: 350px;
   height: 400px;
+  transition: 0.5s;
 }
 
 img {
@@ -38,15 +58,16 @@ img {
   display: none;
   width: 100%;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  border-radius: 0 0 10px 10px;
+  inset: 0;
+  border-radius: 10px;
   transition: 0.5s;
 }
 #faveDetails #faveMovie {
-  text-align: center;
+  position: relative;
 }
 #faveDetails button {
+  position: absolute;
+  top: 300px;
   color: #fff;
   padding: 1em;
   font-size: 1.4rem;
@@ -60,6 +81,9 @@ img {
   color: red;
 }
 
+#faveWrap:hover {
+  transform: scale(1.1);
+}
 #faveWrap:hover #faveDetails {
   display: block;
 }/*# sourceMappingURL=favouriteMoviesStyles.css.map */

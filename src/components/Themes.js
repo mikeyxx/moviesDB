@@ -18,9 +18,13 @@ const Themes = () => {
       )}
       <div className="btnWrap">
         {dark ? (
-          <button onClick={switchTheme}>😏</button>
+          <button onClick={switchTheme} aria-label="toggle dark mode">
+            😏
+          </button>
         ) : (
-          <button onClick={switchTheme}>😎</button>
+          <button onClick={switchTheme} aria-label="toggle light mode">
+            😎
+          </button>
         )}
       </div>
     </div>

@@ -15,3 +15,63 @@ input:focus {
 input::placeholder {
   font-size: 17px;
 }
+
+@media only screen and (max-width: "1125px") {
+  input {
+    padding: 5px;
+    width: 22em;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+
+  input:focus {
+    border: 0;
+    width: 25em;
+    outline-color: orange;
+  }
+
+  input::placeholder {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: "804px") {
+  input {
+    padding: 5px;
+    width: 20em;
+    font-size: 17px;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+
+  input:focus {
+    border: 0;
+    width: 22em;
+    outline-color: orange;
+  }
+}
+
+@media only screen and (max-width: "500px") {
+  .searchContainer {
+    margin-top: 0.7em;
+  }
+
+  input {
+    padding: 5px;
+    width: 15em;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+
+  input:focus {
+    border: 0;
+    width: 17em;
+    outline-color: orange;
+  }
+
+  input::placeholder {
+    font-size: 18px;
+  }
+}
