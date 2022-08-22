@@ -10,10 +10,10 @@ import Favourite from "./components/Favourite";
 export const AppState = createContext();
 
 function App() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(JSON.parse(localStorage.getItem("dark")));
   const [movies, setMovies] = useState({
     moviesItem: [],
-    favourites: [],
+    favourites: JSON.parse(localStorage.getItem("faves")),
   });
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
@@ -22,6 +22,14 @@ function App() {
   const switchTheme = () => {
     setDark((prev) => !prev);
   };
+
+  useEffect(() => {
+    localStorage.setItem("dark", JSON.stringify(dark));
+  }, [dark]);
+
+  useEffect(() => {
+    localStorage.setItem("faves", JSON.stringify(movies.favourites));
+  }, [movies.favourites]);
 
   const fetchMovies = useCallback(async () => {
     setLoading(true);
