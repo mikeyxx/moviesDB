@@ -36,7 +36,7 @@ function App() {
     setError(null);
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?s=${search}&apikey=3642af0a`
+        `https://www.omdbapi.com/?s=${search}&apikey=3642af0a`
       );
       if (!response.ok) throw Error("This movie is not available");
       const data = await response.json();
