@@ -13,7 +13,7 @@ function App() {
   const [dark, setDark] = useState(JSON.parse(localStorage.getItem("dark")));
   const [movies, setMovies] = useState({
     moviesItem: [],
-    favourites: JSON.parse(localStorage.getItem("faves")),
+    favourites: JSON.parse(localStorage.getItem("faves")) || [],
   });
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
