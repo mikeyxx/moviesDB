@@ -87,8 +87,9 @@ function App() {
     >
       <div className={`App ${dark ? "Dark" : ""}`}>
         <Navbar />
-        {loading ? (
-          <p id="loading">Loading...</p>
+        {loading && <h1 className="loading">Loading...</h1>}
+        {loading && error ? (
+          <h1 className="loading">{error}</h1>
         ) : (
           <>
             <Movies />
